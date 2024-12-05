@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{16702A5D-5D9C-42A1-A059-7185CA2837B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Api", "src\GymManagement.Api\GymManagement.Api.csproj", "{DCED55AF-1B24-4573-BAEF-AC167C7F0C57}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Application", "src\GymManagement.Application\GymManagement.Application.csproj", "{E9319CE4-5878-474D-B188-38BC5EBEF88A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Domain", "src\GymManagement.Domain\GymManagement.Domain.csproj", "{35533280-5401-4AE1-960E-35838ADFAA13}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Infrastructure", "src\GymManagement.Infrastructure\GymManagement.Infrastructure.csproj", "{231A2AD8-91EE-41AB-AFF8-D7A98A7B5EA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "requests", "requests", "{2470D7BB-689E-406B-9F8D-B4F294C485CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Contracts", "src\GymManagement.Contracts\GymManagement.Contracts.csproj", "{1E9E1E31-4818-48BA-AE5E-632C9F0732E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Trainers", "Trainers", "{5534ACD2-B168-4AE9-9F9B-A99838AF0A7C}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Gyms\AddTrainer.http = ..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Gyms\AddTrainer.http
+		..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Gyms\CreateGym.http = ..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Gyms\CreateGym.http
+		..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Gyms\DeleteGym.http = ..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Gyms\DeleteGym.http
+		..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Gyms\ListGyms.http = ..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Gyms\ListGyms.http
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rooms", "Rooms", "{4B391F6A-3CE1-4172-962F-A59495FE39D7}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Rooms\CreateRoom.http = ..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Rooms\CreateRoom.http
+		..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Rooms\DeleteRoom.http = ..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Rooms\DeleteRoom.http
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Subscriptions", "Subscriptions", "{9C566E2F-1E99-4CAB-B848-96082D80AB1F}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Subscriptions\CreateSubscription.http = ..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Subscriptions\CreateSubscription.http
+		..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Subscriptions\DeleteSubscription.http = ..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Subscriptions\DeleteSubscription.http
+		..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Subscriptions\GetSubscription.http = ..\..\..\..\Tutorials\C# And AspNetCore\Vods\Dometrain - Getting Started Clean Architecture in .NET\10\requests\Subscriptions\GetSubscription.http
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCED55AF-1B24-4573-BAEF-AC167C7F0C57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCED55AF-1B24-4573-BAEF-AC167C7F0C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCED55AF-1B24-4573-BAEF-AC167C7F0C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCED55AF-1B24-4573-BAEF-AC167C7F0C57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9319CE4-5878-474D-B188-38BC5EBEF88A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9319CE4-5878-474D-B188-38BC5EBEF88A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9319CE4-5878-474D-B188-38BC5EBEF88A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9319CE4-5878-474D-B188-38BC5EBEF88A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35533280-5401-4AE1-960E-35838ADFAA13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35533280-5401-4AE1-960E-35838ADFAA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35533280-5401-4AE1-960E-35838ADFAA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35533280-5401-4AE1-960E-35838ADFAA13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{231A2AD8-91EE-41AB-AFF8-D7A98A7B5EA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{231A2AD8-91EE-41AB-AFF8-D7A98A7B5EA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{231A2AD8-91EE-41AB-AFF8-D7A98A7B5EA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{231A2AD8-91EE-41AB-AFF8-D7A98A7B5EA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E9E1E31-4818-48BA-AE5E-632C9F0732E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E9E1E31-4818-48BA-AE5E-632C9F0732E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E9E1E31-4818-48BA-AE5E-632C9F0732E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E9E1E31-4818-48BA-AE5E-632C9F0732E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DCED55AF-1B24-4573-BAEF-AC167C7F0C57} = {16702A5D-5D9C-42A1-A059-7185CA2837B8}
+		{E9319CE4-5878-474D-B188-38BC5EBEF88A} = {16702A5D-5D9C-42A1-A059-7185CA2837B8}
+		{35533280-5401-4AE1-960E-35838ADFAA13} = {16702A5D-5D9C-42A1-A059-7185CA2837B8}
+		{231A2AD8-91EE-41AB-AFF8-D7A98A7B5EA1} = {16702A5D-5D9C-42A1-A059-7185CA2837B8}
+		{1E9E1E31-4818-48BA-AE5E-632C9F0732E3} = {16702A5D-5D9C-42A1-A059-7185CA2837B8}
+		{5534ACD2-B168-4AE9-9F9B-A99838AF0A7C} = {2470D7BB-689E-406B-9F8D-B4F294C485CC}
+		{4B391F6A-3CE1-4172-962F-A59495FE39D7} = {2470D7BB-689E-406B-9F8D-B4F294C485CC}
+		{9C566E2F-1E99-4CAB-B848-96082D80AB1F} = {2470D7BB-689E-406B-9F8D-B4F294C485CC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0068743-5499-481D-9668-953CB4BF956B}
+	EndGlobalSection
+EndGlobal
