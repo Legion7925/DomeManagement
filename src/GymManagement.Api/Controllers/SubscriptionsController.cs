@@ -10,7 +10,7 @@ namespace GymManagement.Api.Controllers;
 
 [Route("[controller]")]
 [ApiController]
-public class SubscriptionsController : ControllerBase
+public class SubscriptionsController : ApiController
 {
     private readonly ISender _mediator;
 
@@ -32,12 +32,17 @@ public class SubscriptionsController : ControllerBase
 
         var createSubResult = await _mediator.Send(command);
 
-        return createSubResult.MatchFirst(
-            subscription => Ok(new SubscriptionResponse(subscription.Id, request.SubscriptionType)),
-            error => Problem());
+        return createSubResult.Match(
+            subscription => CreatedAtAction(
+                nameof(GetSubscription),
+                new { subscriptionId = subscription.Id },
+                new SubscriptionResponse(
+                    subscription.Id,
+                    ToDto(subscription.SubscriptionType))),
+            Problem);
     }
 
-    [HttpGet]
+    [HttpGet("{subscriptionId:guid}")]
     public async Task<IActionResult> GetSubscription(Guid subId)
     {
         var query = new GetSubscriptionQuery(subId);
@@ -49,7 +54,7 @@ public class SubscriptionsController : ControllerBase
                    subscription.Id,
                    Enum.Parse<SubscriptionType>(subscription.SubscriptionType.Name)
                 )),
-            error => Problem()
+            Problem
             );
     }
 
@@ -62,7 +67,7 @@ public class SubscriptionsController : ControllerBase
 
         return createSubscriptionResult.Match<IActionResult>(
             _ => NoContent(),
-            _ => Problem());
+            Problem);
     }
 
     private static SubscriptionType ToDto(DomainSubscriptionType subscriptionType)

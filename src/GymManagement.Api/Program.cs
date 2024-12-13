@@ -1,5 +1,6 @@
 using GymManagement.Application;
 using GymManagement.Infrastructure;
+using GymManagement.Infrastructure.Common.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure();
 
+builder.Services.AddHttpContextAccessor();
+
 
 var app = builder.Build();
 
@@ -21,6 +24,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.AddInfrustrucureMiddleware();
 
 app.UseHttpsRedirection();
 
