@@ -15,7 +15,8 @@ public static class DependecyInjection
         services.AddMediatR(options =>
         {
             options.RegisterServicesFromAssemblyContaining(typeof(DependecyInjection));
-            options.AddOpenBehavior(typeof(ValidationBehavior<,>)); 
+            options.AddOpenBehavior(typeof(ValidationBehavior<,>));   
+            options.AddOpenBehavior(typeof(AuthorizationBehavior<,>)); 
         });
 
         services.AddValidatorsFromAssemblyContaining(typeof(DependecyInjection));
